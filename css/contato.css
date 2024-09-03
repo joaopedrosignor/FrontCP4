@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#box-contato {
+    width: 90vw;
+    margin: 5px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 200px;
+}
+.banner-redes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.banner-redes a {
+    text-decoration: none;
+    color: #000;
+    transition: all .5s;
+}
+.banner-redes a:hover {
+    color: #4689d6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.form-group {
+    align-items: left;
+}
+.form-group input, 
+.form-group select,
+.form-group textarea {
+    border-radius: 20px;
+}
+.form-group textarea{
+    resize: none;
+}
