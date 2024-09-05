@@ -4,6 +4,34 @@ html, body {
     flex-direction: column;
 }
 
+header{
+    background-color: whitesmoke;
+    /* box-shadow: 0px 3px 10px #464646; */
+}
+
+.navi-list ul{
+    list-style: none;
+}
+
+.navi-link{
+    text-decoration: none !important;
+    font-size: 1.15rem;
+    color:black ;
+    font-weight: 601;
+
+}
+.navi-link:hover{
+    color: rgb(82, 82, 82);
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
 .carousel {
     margin: 20px auto;
 }
@@ -35,6 +63,29 @@ html, body {
 @media (max-width: 768px) {
     #carouselExampleIndicators {
         width: 100% !important;
+    }
+    .navi-item{
+        display: none;
+    }
+    .carrinho{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .mobile-menu .navi-item{
+        display: block;
+    }
+    .mobile-menu .carrinho{
+        display: block;
+    }
+    .open{
+        display: block;
     }
 }
 

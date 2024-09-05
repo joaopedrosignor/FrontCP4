@@ -15,39 +15,48 @@
         </style> -->
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand " href="../index.html">
-                <img src="/img/logo/logo3.png" width="50" height="50" class="d-inline-block align-center" alt=""> Eco Factory
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" style="font-size: 1.2rem;" href="index.html">Roupas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="font-size: 1.2rem;" href="index.html">Beleza</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="font-size: 1.2rem;" href="index.html">Casa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="font-size: 1.2rem;" href="index.html">Tecnologia</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="bi bi-bag" style="font-size: 2rem;"></i>
-                        </a>
-                    </li>
-                </ul>
+        <header>
+            <!-- Utilizei "navi" para não dar conflito com o bootstrap -->
+            <div class="navi-bar d-flex justify-content-between py-3 px-3">
+                <div class="logo d-flex align-items-center">
+                    <a href="../index.html">
+                        <img src="../img/logo/logo.png">
+                    </a>
+                </div>
+                <div class="navi-list d-flex align-items-center">
+                    <ul class="d-flex justify-content-center my-auto px-0">
+                        <li class="navi-item mx-3"><a href="#" class="navi-link">Roupas</a></li>
+                        <li class="navi-item mx-3"><a href="#" class="navi-link">Beleza</a></li>
+                        <li class="navi-item mx-3"><a href="#" class="navi-link">Casa</a></li>
+                        <li class="navi-item mx-3"><a href="#" class="navi-link">Tecnologia</a></li>
+                    </ul>
+                </div>
+                <div class="carrinho">
+                    <a href="#">
+                        <img src="../img/logo/bag.svg" style="width: 40px; height: auto;">
+                    </a>
+                </div>
+    
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()">
+                        <img class="hamb" src="../img/menu/menu.png" style="width: 40px; height: auto;">
+                    </button>
+                </div>
             </div>
-        </nav>
+            <div class="mobile-menu pl-4">
+                <ul class="d-flex flex-column px-0 pb-1">
+                    <li class="navi-item "><a href="#" class="navi-link">Roupas</a></li>
+                    <li class="navi-item "><a href="#" class="navi-link">Beleza</a></li>
+                    <li class="navi-item "><a href="#" class="navi-link">Casa</a></li>
+                    <li class="navi-item "><a href="#" class="navi-link">Tecnologia</a></li>
+                </ul>
+                <div class="carrinho pb-3">
+                    <a href="#">
+                        <img src="../img/logo/bag.svg" style="width: 40px; height: auto;">
+                    </a>
+                </div>
+            </div>
+        </header>
 
         <section id="box-contato">
             <div class="banner-contato">
@@ -92,5 +101,6 @@
                 </div>
             </form>
         </section>
+        <script src="../script/header.js"></script>
     </body>
 </html>
