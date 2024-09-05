@@ -59,6 +59,11 @@ header{
     text-decoration: none !important;
 }
 
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .politica :not(h3) {
     text-align: justify;
