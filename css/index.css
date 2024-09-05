@@ -36,7 +36,31 @@ header{
 .mobile-menu{
     display: none;
 }
+.sustentabilidade button{
+    background-color: #734930;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+.sustentabilidade button a{
+    color: white;
+}
+.sustentabilidade button a:hover{
+    color: white;
+    text-decoration: none;
+    
+}
+.sustentabilidade h1{
+    font-size: 3rem;
+}
+.sustentabilidade button:hover{
+    filter: brightness(1.2);
+}
 
+.card-body{
+    background-color: #f2eeeb;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 .footer {
     font-size: 12px;
@@ -55,14 +79,15 @@ header{
     font-weight: bold;
     font-size: 1rem;
 }
-.footer a{
-    text-decoration: none !important;
+.footer img:hover{
+    color:#734930;
+    transform: scale(1.05); 
 }
-
 .copy{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #d9c6ba;
 }
 
 .politica :not(h3) {
@@ -105,6 +130,16 @@ header{
     .open{
         display: block;
     }
+    .sustentabilidade h1{
+        font-size: 2rem;
+    }
 }
-
+@media (max-width: 320px){
+    .sustentabilidade h1{
+        font-size: 1.5rem;
+    }
+    .categorias h1{
+        font-size: 1.5rem;
+    }
+}
 
