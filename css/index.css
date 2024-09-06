@@ -1,0 +1,145 @@
+html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #d9c6ba;
+    /* box-shadow: 0px 3px 10px #464646; */
+}
+.membro{
+    background-color: #734930;
+    color: #f2eeeb;
+    font-weight: bold;
+}
+
+.navi-list ul{
+    list-style: none;
+}
+
+.navi-link{
+    text-decoration: none !important;
+    font-size: 1.15rem;
+    color:black ;
+    font-weight: 601;
+
+}
+.navi-link:hover{
+    color: #734930;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+.sustentabilidade button{
+    background-color: #734930;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+.sustentabilidade button a{
+    color: white;
+}
+.sustentabilidade button a:hover{
+    color: white;
+    text-decoration: none;
+    
+}
+.sustentabilidade h1{
+    font-size: 3rem;
+}
+.sustentabilidade button:hover{
+    filter: brightness(1.2);
+}
+
+.card-body{
+    background-color: #f2eeeb;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer {
+    font-size: 12px;
+    position: relative; 
+    bottom: 0;
+    background-color: #d9c6ba;
+    padding: 10px 20px; 
+    display: block; 
+    text-align: center;
+}
+.footer h3{
+    color: #734930;
+}
+.footer p{
+    color: #f2eeeb;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.footer img:hover{
+    color:#734930;
+    transform: scale(1.05); 
+}
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9c6ba;
+}
+
+.politica :not(h3) {
+    text-align: justify;
+}
+
+/* Estilos para telas maiores (tablets e desktops) */
+@media (min-width: 800px) {
+    .footer {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px 40px; 
+    }
+}
+
+@media (max-width: 768px) {
+    #carouselExampleIndicators {
+        width: 100% !important;
+    }
+    .navi-item{
+        display: none;
+    }
+    .carrinho{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .mobile-menu .navi-item{
+        display: block;
+    }
+    .mobile-menu .carrinho{
+        display: block;
+    }
+    .open{
+        display: block;
+    }
+    .sustentabilidade h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 320px){
+    .sustentabilidade h1{
+        font-size: 1.5rem;
+    }
+    .categorias h1{
+        font-size: 1.5rem;
+    }
+}
+
