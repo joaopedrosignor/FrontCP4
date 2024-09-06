@@ -1,0 +1,70 @@
+.navi-list ul{
+    list-style: none;
+}
+
+.navi-link{
+    text-decoration: none !important;
+    font-size: 1.15rem;
+    color:black ;
+    font-weight: 601;
+
+}
+.navi-link:hover{
+    color: rgb(82, 82, 82);
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.carousel {
+    margin: 20px auto;
+}
+
+.politica :not(h3) {
+    text-align: justify;
+    color: #007BFF;
+}
+
+/* Estilos para telas maiores (tablets e desktops) */
+@media (min-width: 800px) {
+    .footer {
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 10px 40px; 
+    }
+}
+
+@media (max-width: 768px) {
+    #carouselExampleIndicators {
+        width: 100% !important;
+    }
+    .navi-item{
+        display: none;
+    }
+    .carrinho{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .mobile-menu .navi-item{
+        display: block;
+    }
+    .mobile-menu .carrinho{
+        display: block;
+    }
+    .open{
+        display: block;
+    }
+}
+
