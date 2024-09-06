@@ -27,15 +27,15 @@
 
 .politica :not(h3) {
     text-align: justify;
-    color: #007BFF;
+    color: white;
 }
 
-
-
-
-main {
-    padding: 20px;
-
+main a{
+    color:black;
+}
+main a:hover{
+    text-decoration: none;
+    color: white;
 }
 
 h2 {
@@ -43,117 +43,28 @@ h2 {
 
 }
 
-.tipos .subtitulos h3 {
-    font-family: "Comfortaa", sans-serif;
-    font-size: 24px;
-    font-optical-sizing: auto;
-    font-weight: lighter;
-    font-style: normal;
-    position: absolute;
-
-}
-
-.tipos .subtitulos:hover {
-    box-shadow: 0 3px 0px #811e3a;
-    transition: 0.5s;
-    padding: 30px 700px;
-}
-
-
-section div {
-    display: flex;
-    list-style-type: none;
-    column-gap: 80px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.tipos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;    
-}
-h4 {
-    font-family: "Comfortaa", sans-serif;
-    display: flex;
-    flex-direction: column;
-    width: 280px;
-    height: 460px;
-    padding: 5px;
-    border: #771b35;
-    background-color: rgb(254, 254, 253);
-}
-
-h4:hover {
-    background-color: rgb(245, 242, 242);
-    transform: scale(1.1);
-    /* width: 285px;
-    height: 468px;
-    padding: 12px; */
-    transition: 0.3s;
-    border-radius: 5px;
-}
-
-h4 p {
-    padding: 15px;
-}
-
-.link1 {
-    text-align: center;
-    align-content: center;
-    background-color: #811e3a;
-    color: white;
-    border: 1px solid #999;
-    border-radius: 5px;
-    padding: 3px 0px;
-    margin: auto;
-    margin-bottom: 10px;
-    height: auto;
-    width: 200px;
-}
-
-.link1:hover {
-    /* background-color: #999; */
-    width: 100%;
-    transition: 0.2s;
-    background-color: #1e813f;
-    color: #ffffff;
-    font-weight: bolder;
-    border-radius: 4px;
-    border-color: #fcfbfb;
-    border-width: 1.5px;
-    box-shadow: 0 3px 3px #9b9698;
-
-}
-
-
-
-.sugestão:hover {
-    transition: 0.3s;
-    color: #1e8163;
-    text-decoration: underline;
-}
-
-
-.fieldset {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin: 10px;
-    width: 30%; /* Definição de largura para desktop */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.fieldset img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-
-.fieldset:hover {
-    border-color: rgb(172, 29, 29);
-    transition: 0.3s;
+@media (max-width: 768px) {
+    .navi-item{
+        display: none;
+    }
+    .carrinho{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .mobile-menu .navi-item{
+        display: block;
+    }
+    .mobile-menu .carrinho{
+        display: block;
+    }
+    .open{
+        display: block;
+    }
 }
