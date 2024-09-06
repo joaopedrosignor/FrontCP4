@@ -1,0 +1,118 @@
+main {
+    flex: 1 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.tipos .subtitulos h3 {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 24px;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    position: absolute;
+
+}
+
+.tipos .subtitulos:hover {
+    box-shadow: 0 3px 0px #811e3a;
+    transition: 0.5s;
+    padding: 30px 700px;
+}
+
+
+section div {
+    display: flex;
+    list-style-type: none;
+    column-gap: 80px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.tipos {
+    display: flex;
+    flex-direction: column;
+}
+h4 {
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 460px;
+    padding: 5px;
+    border: #771b35;
+    background-color: rgb(254, 254, 253);
+}
+
+h4:hover {
+    background-color: rgb(245, 242, 242);
+    transform: scale(1.1);
+    /* width: 285px;
+    height: 468px;
+    padding: 12px; */
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+h4 p {
+    padding: 15px;
+}
+
+.link1 {
+    text-align: center;
+    align-content: center;
+    background-color: #811e3a;
+    color: white;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 3px 0px;
+    margin: auto;
+    margin-bottom: 10px;
+    height: auto;
+    width: 200px;
+}
+
+.link1:hover {
+    /* background-color: #999; */
+    width: 100%;
+    transition: 0.2s;
+    background-color: #1e813f;
+    color: #ffffff;
+    font-weight: bolder;
+    border-radius: 4px;
+    border-color: #fcfbfb;
+    border-width: 1.5px;
+    box-shadow: 0 3px 3px #9b9698;
+
+}
+
+
+
+.sugestão:hover {
+    transition: 0.3s;
+    color: #1e8163;
+    text-decoration: underline;
+}
+
+
+.fieldset {
+    padding: 1px;
+    border-radius: 5px;
+    border-color: #ffffff;
+    border: solid 1px rgb(216, 215, 215);
+}
+
+.fieldset:hover {
+    border-color: rgb(172, 29, 29);
+    transition: 0.3s;
+}
